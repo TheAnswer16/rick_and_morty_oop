@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!-- HTML da Página  -->
     <main style="font-family: Fira Code;">
         <section class="h-[110vh] bg-[url('assets/bg.png')] bg-cover bg-center">
             <figure class="flex justify-center items-center">
@@ -53,7 +54,7 @@
                                 <option value="genderless"> Sem gênero </option>
                                 <option value="unknown"> Desconhecido </option>
                             </select>
-                            <div class="w-[31%] text-center border-2 border-gray-300 flex items-center justify-center rounded-md ease-in hover:bg-slate-400"
+                            <div class="w-[31%] text-center border-2 border-gray-300 flex items-center justify-center rounded-md ease-in hover:bg-slate-400 cursor-pointer"
                                 id="search">
                                 <span class="material-symbols-outlined">
                                     search
@@ -73,17 +74,17 @@
                 <div
                     class="bg-slate-50 w-11/12 rounded-md px-2 py-4 flex justify-center items-center">
                     <div class="flex justify-center w-[30%]">
-                        <span class="material-symbols-outlined change-page mx-5" data-page="1" >
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page="1" >
                             first_page
                         </span>
-                        <span class="material-symbols-outlined change-page mx-5" data-page=""  id="previous-page">
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="previous-page">
                             arrow_back_ios
                         </span>
                         <p id="current-page" class="mx-5"></p>
-                        <span class="material-symbols-outlined change-page mx-5" data-page=""  id="next-page">
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="next-page">
                             arrow_forward_ios
                         </span>
-                        <span class="material-symbols-outlined change-page mx-5" data-page=""  id="last-page">
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="last-page">
                             last_page
                         </span>
                     </div>

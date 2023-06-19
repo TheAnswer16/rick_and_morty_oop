@@ -1,4 +1,24 @@
+//Definição da classe personagem, utilizada para tratar os dados que são utilizados para filtrar o retorno da API
+
+/*
+    - Nome
+    - Status
+    - Especie
+    - Tipo
+    - Genero
+    - Page
+
+    Sendo cada um deles um possível filtro para o consumo da API
+
+    A API em questão (The Rick and Morty API) é pública e pode ser acessada através do link abaixo:
+    https://rickandmortyapi.com/
+*/
 class Personagem {
+
+    // Como o javascript não é uma linguagem tipada, a definição dos métodos é definida diretamente no construtor 
+    // O sufixo _ antes da variável é responsável portornar o atributo privado
+
+    // Definição dos atributos da classe
     constructor (nome, status, especie, tipo, genero, page){
         this._nome = nome;
         this._status = status;
@@ -7,6 +27,8 @@ class Personagem {
         this._genero = genero;
         this._page = page;
     }
+
+    //Definição de getters e setters para cada um dos atributos
 
     get getNome() {
         return this._nome;
@@ -55,6 +77,8 @@ class Personagem {
     set setPage(newPage){
         this._page = newPage;
     }
+
 }
 
+//Exportação da classe
 export default Personagem;

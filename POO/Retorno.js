@@ -1,9 +1,26 @@
+//Definição da classe Retorno, utilizada para tratar os dados que são utilizados para filtrar o retorno da API
+
+/*
+    - Status (da requisição)
+    - Data (dados retornados da requisição)
+
+    Sendo cada um deles um possível filtro para o consumo da API
+
+    A API em questão (The Rick and Morty API) é pública e pode ser acessada através do link abaixo:
+    https://rickandmortyapi.com/
+*/
 class Retorno {
     
+    // Como o javascript não é uma linguagem tipada, a definição dos métodos é definida diretamente no construtor 
+    // O sufixo _ antes da variável é responsável portornar o atributo privado
+
+    // Definição de atributos
     constructor(status, data){
         this._status = status;
         this._data = data;
     }
+
+    //Definição de getters e setters para cada um dos atributos
 
     get getStatus(){
         return this._status;
@@ -21,6 +38,7 @@ class Retorno {
         this._data = novaData;
     }
 
+    // Definição do método show, utilizado para criar os cards de cada um dos personagens na tela da aplicação
     show(container){
         
         const info = this._data;
@@ -43,6 +61,12 @@ class Retorno {
                 </div>`;
         }
     }
+
+    // Definição do método clear, utilizado para limpar a tela sempre que ocorre uma nova requisição na API, evitando a repetição e conflito de informações
+    clear (container){
+        container.innerHTML = '';
+    }
 }
 
+// Exportação da classe
 export default Retorno;
