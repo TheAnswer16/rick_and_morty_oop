@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Rajdhani:wght@500&family=Rubik:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HTML da Página  -->
+    <main style="font-family: Fira Code;">
+        <section class="h-[110vh] bg-[url('assets/bg.png')] bg-cover bg-center">
+            <figure class="flex justify-center items-center">
+                <img src="assets/logo.png" alt="" class="w-80">
+            </figure>
+            <div class="flex w-5/5 justify-center">
+                <div class="bg-slate-50 w-11/12 rounded-md px-2 py-4 flex items-center" id="filters">
+                    <form action="" class="flex items-center flex-col w-[100%]">
+                        <div class="flex w-[100%] justify-around">
+                            <input type="text" name="nome" id="nome" placeholder="Nome"
+                                class="outline-none border-2 border-gray-300 p-1 rounded-md w-[31%]">
+                            <select name="status" id="status"
+                                class="outline-none border-2 border-gray-300 p-1 rounded-md w-[31%]">
+                                <option value=""> Status </option>
+                                <option value="alive"> Vivo </option>
+                                <option value="dead"> Morto </option>
+                                <option value="unknown"> Desconhecido </option>
+                            </select>
+                            <input type="text" name="especie" id="especie" placeholder="Espécie"
+                                class="outline-none border-2 border-gray-300 p-1 rounded-md w-[31%]">
+                        </div>
+                        <div class="flex w-[100%] justify-around mt-3">
+                            <input type="text" name="tipo" id="tipo" placeholder="Tipo"
+                                class="outline-none border-2 border-gray-300 p-1 rounded-md w-[31%]">
+                            <select name="genero" id="genero"
+                                class="outline-none border-2 border-gray-300 p-1 rounded-md w-[31%]">
+                                <option value=""> Gênero </option>
+                                <option value="female"> Feminino </option>
+                                <option value="male"> Masculino </option>
+                                <option value="genderless"> Sem gênero </option>
+                                <option value="unknown"> Desconhecido </option>
+                            </select>
+                            <div class="w-[31%] text-center border-2 border-gray-300 flex items-center justify-center rounded-md ease-in hover:bg-slate-400 cursor-pointer"
+                                id="search">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flex w-5/5 justify-center">
+                <div class="px-2 py-4 flex items-center flex-col w-11/12 overflow-y-auto h-[70vh] mt-4 rounded-md"
+                    id="personagens">
+
+                </div>
+            </div>
+            <div class="flex w-5/5 justify-center">
+                <div
+                    class="bg-slate-50 w-11/12 rounded-md px-2 py-4 flex justify-center items-center">
+                    <div class="flex justify-center w-[30%]">
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page="1" >
+                            first_page
+                        </span>
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="previous-page">
+                            arrow_back_ios
+                        </span>
+                        <p id="current-page" class="mx-5"></p>
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="next-page">
+                            arrow_forward_ios
+                        </span>
+                        <span class="material-symbols-outlined change-page mx-5 cursor-pointer" data-page=""  id="last-page">
+                            last_page
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="POO/Retorno.js"></script>
+    <!-- <script src="POO/Personagem.js"></script> -->
+    <!-- <script src="POO/Retorno.js"></script> -->
+</body>
+
+</html>
