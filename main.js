@@ -107,3 +107,6 @@ function getInputValue(id) {
   return document.querySelector(`#${id}`).value;
 }
 
+function callLocationModal(locationName){
+  
+}

@@ -56,7 +56,7 @@ class Retorno {
                         <p class="text-2xl"> Type: ${i.type} </p>
                         <p class="text-2xl"> Gender: ${i.gender} </p>
                         <p class="text-2xl"> Origin: ${i.origin.name} </p>
-                        <p class="text-2xl"> Location: ${i.location.name} </p>
+                        <p class="text-2xl get-location"> Location: ${i.location.name} </p>
                     </div>
                 </div>`;
         }
